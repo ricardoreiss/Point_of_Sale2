@@ -15,8 +15,6 @@ from components.CreateServiceNote import CreateServiceNote
 from components.RenderShortcuts import RenderShortcuts
 from components.Widget import Widget
 
-from components.ProductsTable import ProductsTable
-
 # Abrir o arquivo JSON e carregar os dados
 with open("orderserver.json", "r") as file_json:
     val_orderserver = json.load(file_json)
@@ -306,7 +304,6 @@ class Application(tk.Frame):
             self.add_bbtc()
 
             return nome_json[:-5]
-
 
     def chamado_jaend(self,e):
         self.janela_end()
